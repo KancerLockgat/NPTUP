@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Bebas Neue Cyrillic';
+    src: url(../fonts/Bebas\ Neue\ Cyrillic.ttf);
+}
+
+@font-face {
+    font-family: 'NT SOMIC Regular';
+    src: url(../fonts/01_NTSomic-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'NT SOMIC Bold';
+    src: url(../fonts/03_NTSomic-Bold.ttf);
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.header {
+    padding: 0.64vw 0;
+    background-color: rgb(31, 45, 94);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: white;
+    font-family: 'Bebas Neue Cyrillic';
+    font-size:calc(20px + 8 * (100vw - 320px) / 880);
+    line-height: 55px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+.main-item{
+    color: #4fd6ff;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    line-height: 3.6vh;
+  }
+
+ul li {
+    margin-left: 4vw;
+}
+
+li:hover {
+    color: #5faae3;
+}  
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    width: 3vw;
+}
+
+body {
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.15)), url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 1.56vw;
+    max-width: 3vw;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 5px 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.back-to-top.show{
+    opacity: 1;
+    visibility: visible;
+}
+.back-to-top:hover {
+    background: #5faae3;
+}
+.block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 85vw;
+    padding-top: 1vw;
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.sitetitle{
+    font-family: 'NT SOMIC Bold';
+    font-size: 4.17vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    color:#1f2d5eda;
+    text-shadow: 4px 4px 4px rgba(31,45,94,0.4);
+    width: 85vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-navigation{
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 1vw 3.65vw;
+    box-shadow: 7px 7px 7px rgba(0,0,0,0.25);
+}
+
+.content-title{
+    font-family: 'NT SOMIC Bold';
+    font-size: 3vw;
+    margin-bottom: 1.852vh;
+    color:#1f2d5eda;
+}
+
+.content-list{
+    font-family: 'Bebas Neue Cyrillic';
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-item:hover{
+    color: #5faae3;
+}
+
+.bg{
+    background-color: rgb(210, 213, 223);
+    padding: 10px 0;
+}
+
+.segment {
+    max-width: 85vw;
+    scroll-margin-top: 10vh;
+}
+
+.title{
+    font-family: 'Bebas Neue Cyrillic';
+    color: black;
+    font-size: 3.13vw;
+    text-align: center;
+    margin: 1.563vw 0;
+    line-height: 100%;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3.125vw;
+}
+
+.cont-left{
+    font-family: 'NT SOMIC Regular';
+    font-size: 1.56vw;
+    line-height: 175%;
+    padding-right: 30px;
+    text-shadow: 4px 4px 4px rgba(31,45,94,0.2);
+}
+
+.bold{
+    font-family: 'NT SOMIC Bold';
+}
+ 
+.img-right{
+    max-width: 23.49vw;
+    max-height: 26vw;
+    box-shadow: 7px 7px 7px rgba(31,45,94,0.6);
+    border-radius: 5px;
+}
+
+.maptitle{
+    font-family: 'Bebas Neue Cyrillic';
+    color: black;
+    font-size: 2.60vw;
+    text-align: center;
+    margin: 1.563vw 0;
+}
+
+iframe{
+    filter: invert(100%);
+    border-radius: 5px;
+    width: 45vw;
+    height: 60vh;
+    z-index: 0;
+    margin-left: 2.083vw;
+}
+
+.map{
+    font-family: 'NT SOMIC Regular';
+    font-size: 1.56vw;
+    line-height: 120%;
+    display: flex;
+}
+
+.mapabout{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.315vh;
+    flex: 1;
+}
+
+.adress{
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.worktime-title{
+    margin-top: 2vh;
+}
+
+.worktime{
+    display: flex;
+    margin-right: 2.083vw;
+    justify-content: space-between;
+}
+
+.time{
+    text-align: right;
+}
+
+.line{
+    width: 84.8vw;
+    border: 2px dotted #1f2d5e;;
+    margin-top: 1.563vw;
+}
