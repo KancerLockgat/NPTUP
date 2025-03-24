@@ -13,6 +13,11 @@
     src: url(../fonts/03_NTSomic-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Bebas Neue Light';
+    src: url(../fonts/BebasNeue-Book.otf);
+}
+
 p {
     margin: 0;
 }
@@ -53,7 +58,7 @@ ul li {
 }
 
 li:hover {
-    color: #5faae3;
+    color: rgb(95, 170, 227);
 }  
 
 .nav {
@@ -85,9 +90,9 @@ main {
     position: fixed;
     bottom: 20px;
     right: 1.56vw;
-    max-width: 3vw;
+    max-width: 2.5vw;
     background: rgba(255, 255, 255, 0.85);
-    padding: 5px 5px;
+    padding: 8px 8px;
     border-radius: 100%;
     cursor: pointer;
     z-index: 1000;
@@ -123,31 +128,6 @@ main {
     width: 85vw;
     text-align: center;
     text-transform: uppercase;
-}
-
-.content-navigation{
-    border: 5px solid black;
-    border-radius: 20px;
-    padding: 1vw 3.65vw;
-    box-shadow: 7px 7px 7px rgba(0,0,0,0.25);
-}
-
-.content-title{
-    font-family: 'NT SOMIC Bold';
-    font-size: 3vw;
-    margin-bottom: 1.852vh;
-    color:#1f2d5eda;
-}
-
-.content-list{
-    font-family: 'Bebas Neue Cyrillic';
-    font-size: 2vw;
-    display: flex;
-    flex-direction: column;
-}
-
-.content-item:hover{
-    color: #5faae3;
 }
 
 .bg{
@@ -233,16 +213,33 @@ iframe{
 
 .worktime-title{
     margin-top: 2vh;
+    font-family: 'NT SOMIC Bold';
 }
 
 .worktime{
     display: flex;
     margin-right: 2.083vw;
+    margin-top: 8px;
+    flex-direction: column;
+}
+
+.workday{
+    display: flex;
     justify-content: space-between;
+    flex: 1;
+    padding: 0.313vw 0.781vw;
+}
+
+.workday.day1{
+    background-color: rgba(79, 214, 255, 0.15);
+}
+
+.workday.day2{
+    background-color: rgba(31, 45, 94, 0.15);
 }
 
 .time{
-    text-align: right;
+    font-size: 1.35vw;
 }
 
 .line{
