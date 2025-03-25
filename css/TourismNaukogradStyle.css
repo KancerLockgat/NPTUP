@@ -157,6 +157,7 @@ main {
     line-height: 175%;
     padding-right: 30px;
     text-shadow: 4px 4px 4px rgba(31,45,94,0.2);
+    text-align: justify;
 }
 
 .bold{
